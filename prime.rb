@@ -4,4 +4,6 @@ def prime(i)
     elsif i == 2 
     true 
   else
-    (2..)
+    (2..i/2).none? {|num| i % num == 0 }
+  end 
+end
